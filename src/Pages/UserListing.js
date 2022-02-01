@@ -8,11 +8,6 @@ export default function UserListing() {
 
   const userData = useSelector((state) => state.users);
   const [users, setUser] = useState(userData);
-  // useEffect( () => {
-  //   if(userData){
-  //     setUser(userData)
-  //   }
-  // },[userData])
   console.log(users);
 
   const deleted = (id) => {
